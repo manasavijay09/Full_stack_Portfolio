@@ -38,11 +38,13 @@ a:hover{
 
 #about{
   display: flex;
+  flex-direction: left;
   flex-direction: column;
   justify-content:left;
   gap: 5rem;
   height: 80vh;
   position: relative;
+  text-align: end;
   
 }
 
@@ -106,6 +108,19 @@ a:hover{
   row-gap: 10px;
   column-gap: 20px;
 }
+.img:hover{
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(234, 0, 255);
+}
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+}
 .contact  {
   display: flex;
   flex-wrap: wrap;
@@ -113,24 +128,7 @@ a:hover{
   align-items: center;
   height: 100%;
 }
-@media screen and (max-width: 768px) {
-  .flex-item,
-  .flex-item:first-child {
-    flex-basis: 100%;
-  }
-  .flex-item:first-child {
-    min-height: 150px;
-  }
-  .img-container {
-    justify-content: center;
-    text-align: center;
-  }
-  .contact  {
-    flex-direction: row;
-    align-items: flex-start;
-  }
 
-}
   
 
 
